@@ -1,0 +1,22 @@
+{
+  "sigma_m": 50.0,
+  "classifier_weight": 0.25,
+  "distance_weight": 1.0,
+  "transition_beta_m": 10.0,
+  "unreachable_log_penalty": -20.0,
+  "max_route_dist_m": 2000.0,
+  "route_dist_factor": 3.0,
+  "route_dist_margin_m": 50.0,
+  "search_radius_m": 50.0,
+  "top_k": 10,
+  "gap_threshold_s": 10.0,
+  "excluded_trips": [
+    "00000033",
+    "00000054"
+  ],
+  "scorer": {
+    "type": "artifact",
+    "artifact_path": "mlp.joblib"
+  },
+  "same_arc_backtrack_cost_m": 0.0
+}

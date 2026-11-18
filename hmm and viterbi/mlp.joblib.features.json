@@ -1,0 +1,14 @@
+{
+  "feature_cols": [
+    "distance_m",
+    "rank",
+    "heading_diff_deg",
+    "heading_diff_bidir_deg",
+    "speed_mps",
+    "dist_prev_m",
+    "dt_prev_s",
+    "gap_before",
+    "arc_length_m",
+    "connected_to_prev"
+  ]
+}
