@@ -123,12 +123,10 @@ Replace `YOUR-USERNAME` with your GitHub username.
 ---
 
 # Step 8 — Your Laptop 2 architecture
-
-Since you're Member 4, you're responsible for the **second laptop (UI)** connecting to the **first laptop (ML server)**.
+ the **second laptop (UI)** connecting to the **first laptop (ML server)**.
 
 <box border radius="xl" padding={3} gap={1}>
   <box background="#DCEBFF" theme="light" radius="md" padding={3} align="center" gap={1}>
-    **Laptop 2 — YOUR WORK**
 
     <icon name="monitor" size="xl"/>
 
@@ -162,17 +160,4 @@ And the backend will return the route coordinates, predictions, and evaluation m
 
 ---
 
-## What we should do next
 
-Let's complete this **one step at a time**, not create everything randomly.
-
-**Your immediate task now:**
-
-1. Create the GitHub repository.
-2. Create the `PathSnap` folder in VS Code.
-3. Run the folder-creation commands.
-4. Add the `.gitignore`.
-5. Add the initial README.
-6. Push the initial commit.
-
-Once you're done, send me a **screenshot of your VS Code folder/repository**, and I'll guide you through the next step: setting up the backend skeleton, API endpoints, and the UI in the correct order.
