@@ -1,0 +1,13 @@
+# PathSnap - one requirements file for both laptops
+# Laptop 1 (API) + Laptop 2 (UI)
+fastapi
+uvicorn
+numpy
+pandas
+scikit-learn
+joblib
+lightgbm
+streamlit
+requests
+folium
+streamlit-folium
