@@ -1,0 +1,178 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.key
+credentials.json
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# Raw dataset - avoid pushing the full dataset unless explicitly required
+data/train/*
+data/student_test/*
+data/sample/*
+
+# Keep data documentation
+!data/README.md
+
+# Generated model artifacts - add selectively when needed
+# Do not ignore artifacts permanently if required model files must be submitted
+
+# Cache
+.cache/
+```
+
+**Important:** The guidelines require the code, experiment evidence and necessary model artifacts in the public repository. We should not blindly ignore all models/results. Later we'll selectively commit the required artifacts, logs and results. Also, don't put evaluator ground-truth route files into your UI or prediction pipeline.
+
+# Step 6 — Create the initial README
+
+Your README is the first thing evaluators and teammates see when they open GitHub. Start with this version.
+
+<WritingBlock id="58321" variant="document"># PathSnap 🗺️
+
+**Distributed ML-based GPS Map Matching & Route Reconstruction**
+
+PathSnap reconstructs realistic vehicle routes by matching noisy GPS observations to a road network using machine learning and sequence-based decoding.
+
+## Project Overview
+
+GPS observations can be inaccurate due to noise, signal interference, urban environments, and missing observations. PathSnap aims to identify the most likely road segments and reconstruct a realistic continuous vehicle route.
+
+## System Architecture
+
+- Data processing and preprocessing
+- Candidate road generation
+- Feature engineering
+- Machine learning model training and comparison
+- Bayesian hyperparameter optimization
+- HMM-based sequence modeling
+- Viterbi route decoding
+- FastAPI backend
+- Evaluator-facing UI
+- Geographic route visualization
+
+## Repository Structure
+
+- `src/` — Core processing, features, models, decoder, evaluation and visualization
+- `backend/` — FastAPI application
+- `frontend/` — Evaluator UI
+- `configs/` — Configuration files
+- `experiments/` — Experiments and training records
+- `artifacts/` — Trained models and supporting artifacts
+- `results/` — Metrics, graphs and route visualizations
+- `tests/` — Unit and integration tests
+- `docs/` — Project documentation
+
+## Setup
+
+Setup instructions will be updated as the project dependencies and deployment environment are finalized.
+
+## Running the System
+
+Instructions for starting the backend and UI will be added after integration.
+
+## Team
+
+PathSnap is developed as part of the UE24CS352A Machine Learning course at PES University.</WritingBlock>
+
+We'll update this as the project actually works. Don't claim completed model results or implementation details in README until they're real.
+
+---
+
+# Step 7 — Initialize Git and connect to GitHub
+
+Once the folders and README are created, run these commands in your VS Code terminal:
+
+```bash
+git init
+git add .
+git commit -m "Initial PathSnap repository structure"
+```
+
+Then create the GitHub repository named `PathSnap`, and connect it:
+
+```bash
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/PathSnap.git
+git push -u origin main
+```
+
+Replace `YOUR-USERNAME` with your GitHub username.
+
+---
+
+# Step 8 — Your Laptop 2 architecture
+
+Since you're Member 4, you're responsible for the **second laptop (UI)** connecting to the **first laptop (ML server)**.
+
+<box border radius="xl" padding={3} gap={1}>
+  <box background="#DCEBFF" theme="light" radius="md" padding={3} align="center" gap={1}>
+    **Laptop 2 — YOUR WORK**
+
+    <icon name="monitor" size="xl"/>
+
+    **PathSnap UI**
+
+    Trip selector • Map • Results • Metrics
+  </box>
+  <text textAlign="center">↓ HTTP request over Wi-Fi / LAN</text>
+  <box background="#D9F0E3" theme="light" radius="md" padding={3} align="center" gap={1}>
+    **Laptop 1 — ML Server**
+
+    <icon name="server" size="xl"/>
+
+    **FastAPI**
+
+    Data → Candidate Roads → ML → HMM/Viterbi → Results
+  </box>
+</box>
+
+Your UI must not independently implement the ML logic. It should call the backend API, receive the output and visualize it.
+
+Eventually, the UI will send something like:
+
+```json
+{
+  "trip_id": "00000000"
+}
+```
+
+And the backend will return the route coordinates, predictions, and evaluation metrics that are available and permitted for that trip.
+
+---
+
+## What we should do next
+
+Let's complete this **one step at a time**, not create everything randomly.
+
+**Your immediate task now:**
+
+1. Create the GitHub repository.
+2. Create the `PathSnap` folder in VS Code.
+3. Run the folder-creation commands.
+4. Add the `.gitignore`.
+5. Add the initial README.
+6. Push the initial commit.
+
+Once you're done, send me a **screenshot of your VS Code folder/repository**, and I'll guide you through the next step: setting up the backend skeleton, API endpoints, and the UI in the correct order.
