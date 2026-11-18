@@ -1,0 +1,13 @@
+# PathSnap Member 1 package - Python dependencies
+# Install (Windows / Mac / Linux):
+#   python -m pip install -r requirements.txt
+# (If 'python' is not recognized on Windows, try 'py -m pip install -r requirements.txt')
+
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+folium>=0.15
+
+# Only needed to run EDA.ipynb interactively (VS Code's notebook runner
+# or Jupyter Lab both work):
+#   python -m pip install jupyter
