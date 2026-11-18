@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "knn_rows_per_trip": 500,
+  "features": [
+    "distance_m",
+    "rank",
+    "heading_diff_deg",
+    "heading_diff_bidir_deg",
+    "speed_mps",
+    "dist_prev_m",
+    "dt_prev_s",
+    "gap_before",
+    "arc_length_m",
+    "connected_to_prev"
+  ],
+  "cv": "GroupKFold(n_splits=5) on trip_id",
+  "train_rows": 660434,
+  "test_rows": 70335,
+  "total_runtime_s": 750.0
+}

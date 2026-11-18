@@ -1,0 +1,19 @@
+trial 0: top1=0.7823 logloss=0.2923 (61s) best_so_far=0.7823
+trial 1: top1=0.7819 logloss=0.2922 (51s) best_so_far=0.7823
+trial 2: top1=0.7866 logloss=0.2926 (12s) best_so_far=0.7866
+trial 3: top1=0.7764 logloss=0.3009 (55s) best_so_far=0.7866
+trial 4: top1=0.7839 logloss=0.3147 (14s) best_so_far=0.7866
+trial 5: top1=0.7813 logloss=0.2936 (38s) best_so_far=0.7866
+trial 6: top1=0.7809 logloss=0.2944 (45s) best_so_far=0.7866
+trial 7: top1=0.7784 logloss=0.2986 (46s) best_so_far=0.7866
+trial 8: top1=0.7803 logloss=0.2962 (13s) best_so_far=0.7866
+trial 9: top1=0.7795 logloss=0.2982 (19s) best_so_far=0.7866
+trial 10: top1=0.7841 logloss=0.2919 (12s) best_so_far=0.7866
+trial 11: top1=0.7831 logloss=0.3412 (15s) best_so_far=0.7866
+trial 12: top1=0.7840 logloss=0.2984 (23s) best_so_far=0.7866
+trial 13: top1=0.7848 logloss=0.3185 (24s) best_so_far=0.7866
+trial 14: top1=0.7743 logloss=0.3112 (38s) best_so_far=0.7866
+trial 15: top1=0.7858 logloss=0.2933 (47s) best_so_far=0.7866
+BEST {"n_estimators": 112, "learning_rate": 0.0595875877662897, "num_leaves": 60, "max_depth": 4, "min_child_samples": 195, "subsample": 0.6163856702151521, "colsample_bytree": 0.5453032172664104, "reg_alpha": 0.0036768345165465, "reg_lambda": 2.7679479643581336e-05}
+FINAL tuned: {'model': 'lightgbm_tuned', 'top1_accuracy': 0.8028, 'accuracy': 0.8811, 'precision': 0.7852, 'recall': 0.7651, 'f1_macro': 0.8471, 'log_loss': 0.2826, 'cv_top1_mean': 0.7866, 'train_time_s': 2.62, 'infer_time_s': 0.12, 'n_fit_rows': 660434}
+BAYESOPT DONE

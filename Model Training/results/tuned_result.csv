@@ -1,0 +1,2 @@
+model,top1_accuracy,accuracy,precision,recall,f1_macro,log_loss,cv_top1_mean,train_time_s,infer_time_s,n_fit_rows
+lightgbm_tuned,0.8028442485306465,0.8810691689770385,0.7852199029919886,0.7650807136788446,0.8470948262781077,0.28261659115595666,0.78662,2.62,0.12,660434
