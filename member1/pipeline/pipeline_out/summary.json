@@ -1,0 +1,50 @@
+{
+ "train_trips": 80,
+ "test_trips": 10,
+ "train_points": 208417,
+ "candidate_recall_macro_mean": 0.9522,
+ "candidate_recall_point_weighted": 0.868,
+ "candidate_recall_median": 0.9845,
+ "candidate_recall_min": 0.1064,
+ "candidate_recall_min_trip": "54",
+ "candidate_recall_max": 1.0,
+ "trips_recall_below_90": [
+  {
+   "trip_id": 2,
+   "candidate_recall": 0.846
+  },
+  {
+   "trip_id": 16,
+   "candidate_recall": 0.884
+  },
+  {
+   "trip_id": 33,
+   "candidate_recall": 0.283
+  },
+  {
+   "trip_id": 43,
+   "candidate_recall": 0.858
+  },
+  {
+   "trip_id": 54,
+   "candidate_recall": 0.106
+  },
+  {
+   "trip_id": 61,
+   "candidate_recall": 0.882
+  },
+  {
+   "trip_id": 72,
+   "candidate_recall": 0.843
+  }
+ ],
+ "avg_candidates_per_point": 3.84,
+ "zero_candidate_points_train": 20266,
+ "feature_rows_total": 765414,
+ "feature_rows_train": 695079,
+ "feature_rows_test": 70335,
+ "label_balance_train": 0.2603,
+ "gaps_total_train": 590,
+ "speed_unreliable_total_train": 981,
+ "test_recall_macro_mean": 0.9823
+}
